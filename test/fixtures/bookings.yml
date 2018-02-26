@@ -3,9 +3,16 @@
 one:
   date: MyString
   user: one
-  venue: one
+
+  venue: MyString
+  references: MyString
+
 
 two:
   date: MyString
   user: two
-  venue: two
+
+  venue: MyString
+  references: MyString
+
+

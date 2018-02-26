@@ -11,7 +11,6 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     if @booking.save
-      # redirect_to cocktail_path(@cocktail)
       redirect_to @booking
     else
       render :new
@@ -38,12 +37,12 @@ class BookingsController < ApplicationController
   private
 
 
-    def set_booking
-      @booking = Booking.find(params[:id])
-    end
+  def set_booking
+    @booking = Booking.find(params[:id])
+  end
 
-    def booking_params
-      params.require(:booking).permit(:date)
-    end
+  def booking_params
+    params.require(:booking).permit(:date)
+  end
 
 end
