@@ -1,47 +1,38 @@
-<h1>Venues#show</h1>
-<p id="notice"><%= notice %></p>
+<%= render 'shared/jumbotron' %>
+<div class="container">
+  <h1>
+  <strong> <%=@venue.name %></strong>
+  </h1>
+
+<div class="container">
+<div class="d-inline">
+<%= @venue.category%>&nbsp&nbsp
+<%= @venue.location %>&nbsp&nbsp&nbsp
+ Capacity: <%= @venue.capacity %>&nbsp
+</div>
+
+<br>
 
 <p>
-  <strong>Name:</strong>
-  <%=@venue.name %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @venue.category %>
-</p>
-<p>
-  <strong>Location:</strong>
-  <%= @venue.location %>
-</p>
-
-<p>
-  <strong>Description:</strong>
   <%= @venue.description %>
 </p>
-
-<p>
-  <strong>Capacity:</strong>
-  <%= @venue.capacity %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @venue.price %>
-</p>
-
-
-<p>
-  <strong>:</strong>
-</p>
-
-<p>
-  <strong>Reviews Number:</strong>
-</p>
-
+</div>
+<br>
+<div>
+  <strong>Reviews</strong>
  <% @venue.reviews.each  do |review| %>
-  <div>
-    <%= review.content %> -
-    <%= review.rating %> -
+<div class="message">
+  <div class="message-name">
   </div>
+  <div class="message-body">
+    "<%= review.content %>"
+  </div>
+  <div>
+    <%= review.rating %> stars
+  </div>
+</div>
 <% end %>
+</div>
+
+</div>
+<div>
