@@ -1,4 +1,38 @@
-<h1>Venues#show</h1>
-<p>Find me in app/views/venues/show.html.erb</p>
+<%= render 'shared/jumbotron' %>
+<div class="container">
+  <h1>
+  <strong> <%=@venue.name %></strong>
+  </h1>
 
+<div class="container">
+<div class="d-inline">
+<%= @venue.category%>&nbsp&nbsp
+<%= @venue.location %>&nbsp&nbsp&nbsp
+ Capacity: <%= @venue.capacity %>&nbsp
+</div>
 
+<br>
+
+<p>
+  <%= @venue.description %>
+</p>
+</div>
+<br>
+<div>
+  <strong>Reviews</strong>
+ <% @venue.reviews.each  do |review| %>
+<div class="message">
+  <div class="message-name">
+  </div>
+  <div class="message-body">
+    "<%= review.content %>"
+  </div>
+  <div>
+    <%= review.rating %> stars
+  </div>
+</div>
+<% end %>
+</div>
+
+</div>
+<div>
