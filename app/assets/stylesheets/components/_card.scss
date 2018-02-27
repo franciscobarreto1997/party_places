@@ -1,48 +1,168 @@
-.card {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+.card-wrapper {
+  padding-top: 20px;
+  padding-left: 7.5px !important;
+  padding-right: 7.5px !important;
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+}
+
+.card-container {
+  width: 300px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   background-size: cover !important;
-  background-position: center;
-  color: white;
+  background-color: white;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  height: 330px;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-.card-description h2 {
-  font-size: 24px;
-}
-.card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
-}
+
 .card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
+  color: #545454;;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  z-index: 10;
   background: black;
   opacity: 0;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: #545454;;
+    outline: none;
+  }
 }
-.card-link:hover {
-  opacity: 0.1;
+
+.card-details {
+  margin-top: 10px;
+}
+
+.card-price {
+  font-weight: bold;
+}
+
+.card-name {
+  font-weight: bold;
+}
+
+.card-sports {
+  font-weight: lighter;
+}
+
+.card-duration {
+  font-weight: lighter;
+}
+
+.card-rating-reviews {
+  font-size: 15px;
+}
+
+.card-average-rating {
+  color: #F9690E;
+}
+
+@media (max-width: 1023px) {
+  .card-average-rating {
+    color: #545454;;
+  }
+
+}
+
+.card-image {
+  position: relative;
+  height: 72%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("placeholder.jpg");
+  &:hover, &:active, &:focus {
+    outline: none;
+  }
+}
+
+.card-row {
+  padding: 0px 10px;
+  margin-top: 5px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  position:relative;
+  z-index:2;
+}
+
+// Stars CSS
+.star-icon {
+    position: relative;
+}
+
+.star-icon.full:before {
+    content: '\2605'; /* Full star in UTF8 */
+    position: absolute;
+    left: 0;
+    text-shadow: 0 0 2px #F9690E;
+ }
+
+.star-icon.half:before {
+    content: '\2605'; /* Full star in UTF8 */
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    text-shadow: 0 0 2px #F9690E;;
+}
+
+// Wishlist Badge CSS
+.wishlist-rounded {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+}
+
+.wishlist-rounded-border {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.wishlist-rounded-white {
+  background: #fff;
+}
+
+.wishlist-header {
+  position: relative;
+  float: left;
+}
+
+.wishlist-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  z-index: 20;
+  position: relative;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    outline: none !important;
+  }
+}
+
+.wishlist-icon.empty {
+  fill: none;
+  stroke: #484848;
+  &:hover {
+    fill: #f0787c;
+    stroke: #f0787c;
+  }
 }
