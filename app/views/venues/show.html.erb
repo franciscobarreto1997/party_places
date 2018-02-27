@@ -1,2 +1,47 @@
 <h1>Venues#show</h1>
-<p>Find me in app/views/venues/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%=@venue.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @venue.category %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%= @venue.location %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @venue.description %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @venue.capacity %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @venue.price %>
+</p>
+
+
+<p>
+  <strong>:</strong>
+</p>
+
+<p>
+  <strong>Reviews Number:</strong>
+</p>
+
+ <% @venue.reviews.each  do |review| %>
+  <div>
+    <%= review.content %> -
+    <%= review.rating %> -
+  </div>
+<% end %>
