@@ -2,7 +2,6 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
-#
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "destroying all data"
@@ -17,8 +16,10 @@ Venue.create!({
   location: "Paris",
   address: "18 Rue Beautreillis, 75004 Paris, France",
   description: "Small lounge for private events",
-  category: "Lounges"
+  category: "Lounges",
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753413/photos-by-lanty-568713-unsplash.jpg"
 })
+
 Venue.create!({
   name: "Big Warehouse",
   capacity: 250,
@@ -26,7 +27,8 @@ Venue.create!({
   location: "Brussels",
   address: "Van Arteveldestraat 1, 1000 Brussels, Belgium",
   description: "Large open space for private events",
-  category: "Large venues"
+  category: "Large venues",
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753403/joshua-ness-109299-unsplash.jpg"
 })
 Venue.create!({
   name: "Pouso alto",
@@ -35,7 +37,8 @@ Venue.create!({
   location: "Oliveira de Azemeis",
   address: "Travessa do vale 38, 3720 Oliveira de Azemeis, Portugal",
   description: "large dining",
-  category: "Dining rooms"
+  category: "Dining rooms",
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753403/joshua-ness-109299-unsplash.jpg"
 })
 Venue.create!({
   name: "Estrela do Atlantico",
@@ -44,7 +47,30 @@ Venue.create!({
   location: "Mira",
   address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
   description: "large dining",
-  category: "Dining rooms"
+  category: "Dining rooms",
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg"
+})
+
+Venue.create!({
+  name: "Cool space",
+  capacity: 80,
+  price: 650,
+  location: "Mira",
+  address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
+  description: "large venues",
+  category: "large venues",
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg"
+})
+
+Venue.create!({
+  name: "Estrela do Atlantico",
+  capacity: 80,
+  price: 650,
+  location: "Mira",
+  address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
+  description: "large dining",
+  category: "Dining rooms",
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg"
 })
 User.create!({
     name: "Jose",

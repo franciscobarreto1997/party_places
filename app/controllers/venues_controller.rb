@@ -14,6 +14,7 @@ class VenuesController < ApplicationController
   end
 
 
+
   private
 
   def set_venue
