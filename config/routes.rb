@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   resources :venues, only: [ :index, :show, :search ]
 
 
+
   devise_for :users
   root to: 'pages#home'
 
   get '/search', to: 'pages#search'
+
 end

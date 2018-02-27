@@ -7,16 +7,19 @@
   }
 }
 
-.card-container {
-  width: 250px;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+.cards-container {
+  width: 300px;
+  height: 330px;
   background-size: cover !important;
   background-color: white;
-  padding-bottom: 50px;
-  border-radius: 2px;
-  height: 250px;
+  background-position: center;
   position: relative;
   font-family: 'Open Sans', sans-serif;
+  justify-content: space-around;
+  border-radius: 2px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  margin: 14px;
 }
 
 .card-link {
@@ -37,9 +40,9 @@
   }
 }
 
-// .card-details {
-//   margin-top: 5px;
-// }
+.card-details {
+  margin-top: 10px;
+}
 
 .card-price {
   font-weight: bold;
@@ -49,11 +52,7 @@
   font-weight: bold;
 }
 
-.card-sports {
-  font-weight: lighter;
-}
-
-.card-duration {
+.card-location {
   font-weight: lighter;
 }
 
@@ -87,7 +86,7 @@
 
 .card-row {
   padding: 0px 10px;
-  // margin-top: 2px;
+  margin-top: 5px;
   overflow:hidden;
   white-space:nowrap;
   text-overflow: ellipsis;
