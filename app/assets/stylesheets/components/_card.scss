@@ -8,13 +8,13 @@
 }
 
 .card-container {
-  width: 300px;
+  width: 250px;
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   background-size: cover !important;
   background-color: white;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   border-radius: 2px;
-  height: 330px;
+  height: 250px;
   position: relative;
   font-family: 'Open Sans', sans-serif;
 }
@@ -37,9 +37,9 @@
   }
 }
 
-.card-details {
-  margin-top: 10px;
-}
+// .card-details {
+//   margin-top: 5px;
+// }
 
 .card-price {
   font-weight: bold;
@@ -87,7 +87,7 @@
 
 .card-row {
   padding: 0px 10px;
-  margin-top: 5px;
+  // margin-top: 2px;
   overflow:hidden;
   white-space:nowrap;
   text-overflow: ellipsis;
