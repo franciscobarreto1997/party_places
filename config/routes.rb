@@ -1,36 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'reviews/index'
 
-  get 'reviews/new'
+  resources :reviews, only: [ :index, :new, :create, :edit, :update, :delete ]
 
-  get 'reviews/create'
+  resources :bookings, only: [ :index, :new, :create, :show, :update, :edit, :delete ]
 
-  get 'reviews/edit'
-
-  get 'reviews/update'
-
-  get 'reviews/destroy'
-
-  get 'bookings/index'
-
-  get 'bookings/new'
-
-  get 'bookings/create'
-
-  get 'bookings/show'
-
-  get 'bookings/update'
-
-  get 'bookings/edit'
-
-  get 'bookings/delete'
-
-  get 'venues/index'
-
-  get 'venues/show'
-
-  get 'venues/search'
+  resources :venues, only: [ :index, :show, :search ]
 
 
   devise_for :users
