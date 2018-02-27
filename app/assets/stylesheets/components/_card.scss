@@ -7,16 +7,20 @@
   }
 }
 
-.card-container {
+.cards-container {
   width: 300px;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  height: 330px;
+  // text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-color: white;
-  padding-bottom: 10px;
-  border-radius: 2px;
-  height: 330px;
+  background-position: center;
   position: relative;
   font-family: 'Open Sans', sans-serif;
+  justify-content: space-around;
+  border-radius: 2px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  margin: 14px;
 }
 
 .card-link {
@@ -49,11 +53,7 @@
   font-weight: bold;
 }
 
-.card-sports {
-  font-weight: lighter;
-}
-
-.card-duration {
+.card-location {
   font-weight: lighter;
 }
 
