@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :venues, only: [ :index, :show, :search ]
 
+  get "user/dashboard", to: "users#dashboard"
 
   devise_for :users
   root to: 'pages#home'
