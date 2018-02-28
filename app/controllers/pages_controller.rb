@@ -7,10 +7,10 @@ class PagesController < ApplicationController
 
   def search
 
-    @venues = Venue.where(location: params["city"])
 
     @venues = Venue.all
-    @venues = Venue.where.not(latitude: nil, longitude: nil)
+    @venues = @venues.where(location: params[:city]) if params[:city]
+    @venues = @venues.where.not(latitude: nil, longitude: nil)
     @markers = @venues.map do |venue|
       {
         lat: venue.latitude,
