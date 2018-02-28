@@ -1,40 +1,41 @@
 <%= render 'shared/jumbotron' %>
 <div class="container">
-  <h1>
-  <strong> <%=@venue.name %></strong>
-  </h1>
+  <div class="col-xs-7">
+      <h1>
+        <strong> <%=@venue.name %></strong>
+      </h1>
+      <div class="d-inline">
+        <%= @venue.category%>&nbsp&nbsp
+        <%= @venue.location %>&nbsp&nbsp&nbsp
+        Capacity: <%= @venue.capacity %>&nbsp
+        <p>
+          <%= @venue.description %>
+        </p>
+      </div>
 
-<div class="container">
-<div class="d-inline">
-<%= @venue.category%>&nbsp&nbsp
-<%= @venue.location %>&nbsp&nbsp&nbsp
- Capacity: <%= @venue.capacity %>&nbsp
-</div>
-
-<br>
-
-<p>
-  <%= @venue.description %>
-</p>
-</div>
-<br>
-<div>
-  <strong>Reviews</strong>
- <% @venue.reviews.each  do |review| %>
-<div class="message">
-  <div class="message-name">
+      <div>
+        <strong>Reviews</strong>
+        <% @venue.reviews.each  do |review| %>
+        <div class="message">
+          <div class="message-name">
+          </div>
+          <div class="message-body">
+            "<%= review.content %>"
+          </div>
+          <div>
+            <%= review.rating %> stars
+          </div>
+        </div>
+        <% end %>
+      </div>
   </div>
-  <div class="message-body">
-    "<%= review.content %>"
+  <div class="col-xs-5">
+    <%= render 'shared/venue_form' %>
   </div>
-  <div>
-    <%= review.rating %> stars
-  </div>
-</div>
-<% end %>
 </div>
 
-</div>
+
+
 
 
 
