@@ -11,10 +11,6 @@ class VenuesController < ApplicationController
     @booking = Booking.new
   end
 
-
-
-
-
   private
 
   def set_venue
@@ -22,3 +18,5 @@ class VenuesController < ApplicationController
   end
 
 end
+
+
