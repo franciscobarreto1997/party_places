@@ -5,6 +5,8 @@ class PagesController < ApplicationController
   end
 
   def search
+    # @venues = Venue.where("name LIKE '%?%'", params[:name])
+    @venues = Venue.all
   end
 
   def results
