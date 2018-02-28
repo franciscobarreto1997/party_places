@@ -10,5 +10,7 @@ class Venue < ApplicationRecord
   validates :address, presence: true
   validates :description, presence: true
   validates :category, presence: true
+  mount_uploader :photo, PhotoUploader
 
 end
+

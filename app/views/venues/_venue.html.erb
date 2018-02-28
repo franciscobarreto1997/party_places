@@ -1,8 +1,4 @@
-
-<div class="cards-container col-xs-12 col-sm-6 col-lg-4 card-wrapper padded-top">
-
-  <!-- Card Image -->
-  <div class="card-image">
+<div class="card-image">
     <div class="wishlist-rounded wishlist-rounded-white text-center">
       <a href="#">
         <!-- Inline SVG -->
@@ -17,7 +13,15 @@
 
 
   <!-- Card Bottom Row -->
-
+    <div class="card-details">
+    <div class="card-row">
+      <span class="card-price"> €<%= venue.price %> |</span>
+      <span class="card-name"><%= venue.name %></span>
+    </div>
+    <div class="card-row">
+      <span class="card-location"><%= venue.location %></span>
+    </div>
+  </div>
 
   <!-- Card Rating and Review -->
   <div class="card-rating-reviews">
@@ -38,5 +42,8 @@
   <!-- Card Link -->
   <a href="#" class="card-link"></a>
 </div>
+
+
+
 
 
