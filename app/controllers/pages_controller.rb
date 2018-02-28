@@ -9,7 +9,6 @@ class PagesController < ApplicationController
     # @venues = Venue.where("name LIKE '%?%'", params[:name])
     @venues = Venue.all
     @venues = Venue.where.not(latitude: nil, longitude: nil)
-
     @markers = @venues.map do |venue|
       {
         lat: venue.latitude,
