@@ -1,4 +1,19 @@
-  <div class="card-details">
+<div class="card-image">
+    <div class="wishlist-rounded wishlist-rounded-white text-center">
+      <a href="#">
+        <!-- Inline SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="3430 1212 18 15.978" class="wishlist-icon wishlist-icon empty">
+          <defs>
+          </defs>
+          <path id="Path_229" data-name="Path 229" class="cls-1" d="M13.237.5a3.777,3.777,0,0,0-2.523.995A6.534,6.534,0,0,0,8.988,3.452,6.485,6.485,0,0,0,7.262,1.488a3.676,3.676,0,0,0-.31-.25A3.753,3.753,0,0,0,4.738.5C2.393.5.443,2.78.489,5.593A5.73,5.73,0,0,0,.653,6.937a5.629,5.629,0,0,0,.382,1.107c1.878,4.269,7.952,7.372,7.952,7.372s6.075-3.1,7.952-7.372a6.093,6.093,0,0,0,.382-1.107,5.773,5.773,0,0,0,.165-1.344C17.54,2.78,15.589.5,13.237.5Z" transform="translate(3430.012 1212)"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Card Bottom Row -->
+    <div class="card-details">
     <div class="card-row">
       <span class="card-price"> €<%= venue.price %> |</span>
       <span class="card-name"><%= venue.name %></span>
@@ -7,3 +22,28 @@
       <span class="card-location"><%= venue.location %></span>
     </div>
   </div>
+
+  <!-- Card Rating and Review -->
+  <div class="card-rating-reviews">
+    <div class="card-row">
+      <span class="card-average-rating">
+        <span class="star-icon full">☆</span>
+        <span class="star-icon full">☆</span>
+        <span class="star-icon full">☆</span>
+        <span class="star-icon full">☆</span>
+        <span class="star-icon">☆</span>
+      </span>
+      <span class="card-reviews-count">
+        &middot; 8 reviews
+      </span>
+    </div>
+  </div>
+
+  <!-- Card Link -->
+  <a href="#" class="card-link"></a>
+</div>
+
+
+
+
+
