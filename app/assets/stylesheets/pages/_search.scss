@@ -1,0 +1,13 @@
+.search-wrapper {
+  position: fixed;
+  height: calc(100vh - 70px);
+}
+
+.search-left {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.search-right {
+  height: 100%;
+}
