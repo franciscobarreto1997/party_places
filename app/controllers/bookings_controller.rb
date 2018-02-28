@@ -1,5 +1,7 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: [:show]
+  before_action :set_venue, only: [:create]
+
   def index
     @bookings = Booking.all
   end
@@ -12,10 +14,12 @@ class BookingsController < ApplicationController
     #@booking = Booking.new(booking_params)
     @booking = current_user.bookings.build(booking_params)
 
+    @booking.venue = @venue
+
     if @booking.save
-      redirect_to @booking
+      redirect_to user_dashboard_path
     else
-      render :new
+      redirect_back fallback_location: root_path, alert: "Could not save this booking"
     end
   end
 
@@ -45,6 +49,10 @@ class BookingsController < ApplicationController
 
   def booking_params
     params.require(:booking).permit(:date)
+  end
+
+  def set_venue
+    @venue = Venue.find(params[:venue_id])
   end
 
 end

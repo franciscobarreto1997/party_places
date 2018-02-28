@@ -9,7 +9,7 @@
         <%= f.input :capacity %>
       <% end %>
 
-      <%= simple_form_for @booking do |f| %>
+      <%= simple_form_for [@venue, @booking] do |f| %>
         <%  f.input :venue_id, :as => :hidden, :input_html => { :value => @venue.id } %>
 
         <%= f.input :date, as: :date %>
