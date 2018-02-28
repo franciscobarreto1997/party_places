@@ -9,8 +9,10 @@ Rails.application.routes.draw do
 
   get "user/dashboard", to: "users#dashboard"
 
+
   devise_for :users
   root to: 'pages#home'
 
   get '/search', to: 'pages#search'
+
 end

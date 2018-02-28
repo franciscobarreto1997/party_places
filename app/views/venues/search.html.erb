@@ -1,2 +1,8 @@
 <h1>Venues#search</h1>
 <p>Find me in app/views/venues/search.html.erb</p>
+
+<%= render 'shared/searchbar' %>
+<% @venues.each do |venue|%>
+<%= render 'shared/card', venue: venue %>
+<% end %>
+<div id="map">My map will go here</div>
