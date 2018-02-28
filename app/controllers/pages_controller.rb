@@ -6,7 +6,9 @@ class PagesController < ApplicationController
   end
 
   def search
-    # @venues = Venue.where("name LIKE '%?%'", params[:name])
+
+    @venues = Venue.where(location: params["city"])
+
     @venues = Venue.all
     @venues = Venue.where.not(latitude: nil, longitude: nil)
     @markers = @venues.map do |venue|
@@ -21,5 +23,6 @@ class PagesController < ApplicationController
 
   def results
   end
+
 
 end
