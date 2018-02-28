@@ -1,5 +1,6 @@
 <div class="search-container">
-  <form action="venues/search">
+  <%= form_tag search_path, method: :get do %>
+  <form action="pages/search">
     <div class="col-xm-12 col-sm-6 col-sm-offset-3">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Where will you host your party?" name="city">
@@ -8,5 +9,5 @@
         </span>
       </div>
     </div>
-  </form>
+  <% end %>
 </div>
