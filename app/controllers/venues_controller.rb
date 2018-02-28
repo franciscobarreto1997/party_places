@@ -8,11 +8,10 @@ class VenuesController < ApplicationController
 
   def show
 
+    @booking = Booking.new
   end
 
-  def search
-    @venues = Venue.where("name LIKE '%?%'", params[:name])
-  end
+
 
 
 

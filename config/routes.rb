@@ -5,11 +5,16 @@ Rails.application.routes.draw do
 
   resources :bookings, only: [ :index, :new, :create, :show, :update, :edit, :delete ]
 
-  resources :venues, only: [ :index, :show, :search ]
-
-
-  devise_for :users
-  root to: 'pages#home'
 
   get '/search', to: 'pages#search'
+
+  get "user/dashboard", to: "users#dashboard"
+
+
+  resources :venues, only: [ :index, :show, :search ]
+
+  devise_for :users
+
+  root to: 'pages#home'
+
 end
