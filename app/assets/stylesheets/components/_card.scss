@@ -1,3 +1,7 @@
+.card-margin {
+  padding: 15px;
+}
+
 .card-wrapper {
   padding-top: 20px;
   padding-left: 7.5px !important;
@@ -8,7 +12,6 @@
 }
 
 .cards-container {
-  width: 300px;
   height: 330px;
   background-size: cover !important;
   background-color: white;
@@ -19,7 +22,6 @@
   border-radius: 2px;
   padding-bottom: 20px;
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  margin: 14px;
 }
 
 .card-link {
@@ -78,7 +80,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("placeholder.jpg");
   &:hover, &:active, &:focus {
     outline: none;
   }

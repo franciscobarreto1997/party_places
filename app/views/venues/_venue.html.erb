@@ -1,5 +1,7 @@
-<div class="cards-container col-xs-12 col-sm-6 col-lg-4 card-wrapper padded-top">
-  <div class="card-image">
+<div class="card-margin col-xs-12 col-sm-6 col-lg-4">
+
+<div class="cards-container card-wrapper padded-top">
+  <div class="card-image" style="background-image: url('<%= venue.photo.url %>')">
       <div class="wishlist-rounded wishlist-rounded-white text-center">
         <a href="#">
           <!-- Inline SVG -->
@@ -42,9 +44,9 @@
 
   <!-- Card Link -->
   <%= link_to venue, class: "card-link" do %>
-
   <% end %>
 
+</div>
 </div>
 
 

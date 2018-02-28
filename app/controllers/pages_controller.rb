@@ -9,8 +9,17 @@ class PagesController < ApplicationController
 
     @venues = Venue.where(location: params["city"])
 
-    #@venues = Venue.all
+    @venues = Venue.all
+    @venues = Venue.where.not(latitude: nil, longitude: nil)
+    @markers = @venues.map do |venue|
+      {
+        lat: venue.latitude,
+        lng: venue.longitude#,
+        # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
+      }
+    end
   end
+
 
   def results
   end

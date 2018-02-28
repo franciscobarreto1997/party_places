@@ -1,10 +1,22 @@
 <h1>Dashboard</h1>
-<ul>
-  <% current_user.bookings.each do |booking| %>
-  <li>
-     <%= booking.venue.name %>
-  </li>
-  <% end %>
-</ul>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% current_user.bookings.each do |booking| %>
+      <td> <%= booking.venue.name %> </td>
+      <td> <%= booking.venue.price %> </td>
+      <td> <%= booking.venue.address %> </td>
+    </tr>
+    <% end %>
+    <tr>
+  </tbody>
+</table>
 
 
