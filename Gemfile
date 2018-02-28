@@ -12,6 +12,8 @@ gem 'rails', '5.1.5'
 gem 'redis'
 gem "pundit"
 gem 'carrierwave'
+gem "geocoder"
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
