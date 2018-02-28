@@ -1,9 +1,16 @@
 
-<h1>Pages#search</h1>
-<p>Find me in app/views/pages/search.html.erb</p>
+<h1></h1>
 
 <%= render 'shared/searchbar' %>
-<% @venues.each do |venue|%>
-<%= render 'shared/card', venue: venue %>
-<% end %>
-<div id="map">My map will go here</div>
+
+<%= render @venues %>
+
+<div
+  id="map"
+  style="width: 33%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: 0px;"
+  data-markers="<%= @markers.to_json %>"
+></div>
