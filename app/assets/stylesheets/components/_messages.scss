@@ -1,3 +1,6 @@
+.d-inline {
+  padding-bottom: 50px;
+}
 .message {
   display: flex;
   align-items: center;
@@ -9,29 +12,12 @@
 }
 .message-body {
   flex-grow: 1;
+  color: black;
 }
-.message-name {
-  padding-left: 10px;
-  min-width: 100px;
-}
-.message-name h3 {
-  font-size: 13px;
-  margin-bottom: 0px;
-}
-.message-name p {
-  font-size: 13px;
-  font-weight: lighter;
-  opacity: 0.6;
-  margin-top: 5px;
-}
-.message-body {
-  padding-left: 10px;
-  font-size: 13px;
-  color: rgba(0,0,0,0.7);
-}
+
 .message-body {
   padding-left: 20px;
-  color: rgba(0,0,0,0.4);
+  font-size: 13px;
 }
 .message-body strong{
   color: rgba(0,0,0,0.9);

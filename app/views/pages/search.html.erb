@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <div class="search-wrapper">
   <div class="search-left col-xs-8">
     <%= render 'shared/searchbar' %>
@@ -17,4 +18,23 @@
   </div>
 </div>
 
+=======
+>>>>>>> f4ac4dcdb403fb8235f96843c20d7aa5e3b4aca9
 
+<div class="search-wrapper">
+  <div class="search-left col-xs-8">
+    <%= render 'shared/searchbar' %>
+    <%= render @venues %>
+    <%= render @venues %>
+    <%= render @venues %>
+    <%= render @venues %>
+  </div>
+  <div class="search-right col-xs-4">
+    <div
+      id="map"
+      style="
+      width: 100%; height: 100%;"
+      data-markers="<%= @markers.to_json %>"
+    ></div>
+  </div>
+</div>
