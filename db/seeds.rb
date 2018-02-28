@@ -15,9 +15,9 @@ Venue.create!({
   price: 600,
   location: "Paris",
   address: "18 Rue Beautreillis, 75004 Paris, France",
-  description: "Small lounge for private events",
+  description: "Small lounge for private events, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.",
   category: "Lounges",
-  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753413/photos-by-lanty-568713-unsplash.jpg"
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519815482/eloise-ambursley-355875-unsplash.jpg"
 })
 
 Venue.create!({
@@ -26,19 +26,21 @@ Venue.create!({
   price: 1000,
   location: "Brussels",
   address: "Van Arteveldestraat 1, 1000 Brussels, Belgium",
-  description: "Large open space for private events",
+  description: "Large open space for private events, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
+",
   category: "Large venues",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753403/joshua-ness-109299-unsplash.jpg"
 })
 Venue.create!({
-  name: "Pouso alto",
+  name: "Dining Poso Alto",
   capacity: 100,
   price: 500,
   location: "Oliveira de Azemeis",
   address: "Travessa do vale 38, 3720 Oliveira de Azemeis, Portugal",
-  description: "large dining",
+  description: "large dining, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
+",
   category: "Dining rooms",
-  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753403/joshua-ness-109299-unsplash.jpg"
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753413/photos-by-lanty-568713-unsplash.jpg"
 })
 Venue.create!({
   name: "Estrela do Atlantico",
@@ -46,7 +48,8 @@ Venue.create!({
   price: 650,
   location: "Mira",
   address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
-  description: "large dining",
+  description: "Large dining, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
+",
   category: "Dining rooms",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg"
 })
@@ -57,7 +60,7 @@ Venue.create!({
   price: 650,
   location: "Mira",
   address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
-  description: "large venues",
+  description: "large venues, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.",
   category: "large venues",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg"
 })
@@ -68,9 +71,10 @@ Venue.create!({
   price: 650,
   location: "Mira",
   address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
-  description: "large dining",
+  description: "Large dining, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
+",
   category: "Dining rooms",
-  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg"
+  remote_photo_url: "https://res.cloudinary.com/geebabygee/image/upload/t_media_lib_thumb/v1519816206/alexander-popov-342444-unsplash.jpg"
 })
 User.create!({
     name: "Jose",
