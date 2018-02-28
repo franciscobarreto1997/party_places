@@ -15,7 +15,8 @@ Venue.create!({
   price: 600,
   location: "Paris",
   address: "18 Rue Beautreillis, 75004 Paris, France",
-  description: "Small lounge for private events, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.",
+   description: "Lounge for private events, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
+",
   category: "Lounges",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519815482/eloise-ambursley-355875-unsplash.jpg"
 })
@@ -96,9 +97,44 @@ User.create!({
     email: "franciscobarreto1997@github.com",
     password: "765432"
 })
-Booking.create!({
+Venue.all.each do |venue|
+
+booking = Booking.create!({
     date: DateTime.now,
     user: User.last,
-    venue: Venue.first
+    venue: venue
+})
+Review.create!({
+    content: "Amazing place! Loved it very much!",
+    rating: 3,
+    booking: booking
+})
+end
+Review.create!({
+    content: "Amazing place! Loved it very much!",
+    rating: 3,
+    booking: Booking.first
+})
+Review.create!({
+    content: "Dope sound, was awesome",
+    rating: 5,
+    booking: Booking.last
+})
+Review.create!({
+    content: "Really cool space",
+    rating: 4,
+    booking: Booking.first
+})
+
+Review.create!({
+    content: "Loved every bit of it",
+    rating: 3,
+    booking: Booking.first
+})
+
+Review.create!({
+    content: "Nice one",
+    rating: 2,
+    booking: Booking.first
 })
 
