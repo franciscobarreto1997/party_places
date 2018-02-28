@@ -1,9 +1,10 @@
 
-<h1></h1>
+<h5>Explore the perfect venues to guarantee your party is an unforgettable event</h5>
 
 <%= render 'shared/searchbar' %>
-
+<div class="container">
 <%= render @venues %>
+</div>
 
 <div
   id="map"
@@ -14,3 +15,4 @@
   top: 0px;"
   data-markers="<%= @markers.to_json %>"
 ></div>
+
