@@ -1,5 +1,4 @@
 <h1>Dashboard</h1>
-import swal from 'sweetalert';
 
 <table class="table table-dark">
   <thead>
@@ -10,8 +9,6 @@ import swal from 'sweetalert';
     </tr>
   </thead>
   <tbody>
-    <button id="sweet-alert-demo" class="btn btn-primary">Click me!</button>
-    swal("Good job!", "You clicked the button!", "success");
     <tr>
       <% current_user.bookings.each do |booking| %>
       <td> <%= booking.venue.name %> </td>
