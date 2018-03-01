@@ -73,7 +73,7 @@ Venue.create!({
   capacity: 80,
   price: 650,
   location: "Mira",
-  address: "R. Furriel Meliciano António Henriques da Costa, Praia de Mira, Portugal",
+  address: "Av. Infante Dom Henrique, 3070-791 Praia de Mira, Portugal",
   description: "We are Committed to using the finest ingredients in our recipes. No food leaves our kitchen that we ourselves would not eat.am boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
 ",
   category: "Dining rooms",
