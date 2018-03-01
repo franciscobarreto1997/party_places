@@ -6,16 +6,14 @@ class PagesController < ApplicationController
   end
 
   def search
+    @venues = Venue.search(params[:query])
 
-
-    @venues = Venue.all
-    @venues = @venues.where(location: params[:city]) if params[:city]
     @venues = @venues.where.not(latitude: nil, longitude: nil)
+
     @markers = @venues.map do |venue|
       {
         lat: venue.latitude,
-        lng: venue.longitude
-        # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
+        lng: venue.longitude,
       }
     end
   end

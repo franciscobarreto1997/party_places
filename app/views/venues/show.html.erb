@@ -1,7 +1,8 @@
 <%= render 'shared/jumbotron' %>
 <div class="container">
   <div class="col-xs-7">
-      <h1>
+
+      <h2>
         <strong> <%=@venue.name %></strong>
         <hr>
       </h1>
@@ -15,8 +16,11 @@
 
         <hr>
         <p>
+          <br>
           <%= @venue.description %>
+          <br>
         </p>
+
       </div>
 
       <div>
@@ -26,6 +30,7 @@
           <div class="message-body">
             "<%= review.content %>"
           </div>
+
           <div>
             <%= review.rating %> <span class="star-icon full">☆</span>
           </div>

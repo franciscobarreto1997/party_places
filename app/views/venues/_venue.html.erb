@@ -27,6 +27,7 @@
   </div>
 
   <!-- Card Rating and Review -->
+  <%= link_to venue_path(venue), anchor: "#reviews" do %>
   <div class="card-rating-reviews">
     <div class="card-row">
       <span class="card-average-rating">
@@ -41,6 +42,7 @@
       </span>
     </div>
   </div>
+  <% end %>
 
   <!-- Card Link -->
   <%= link_to venue, class: "card-link" do %>
