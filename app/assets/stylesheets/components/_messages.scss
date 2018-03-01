@@ -6,6 +6,8 @@
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid rgba(220,224,244,0.4);
+  margin-right: -5px;
+
 }
 .message:last-child {
   border-bottom: none;
@@ -13,9 +15,6 @@
 .message-body {
   flex-grow: 1;
   color: black;
-}
-
-.message-body {
   padding-left: 20px;
   font-size: 13px;
 }
@@ -25,8 +24,4 @@
 }
 .message-body p {
   margin: 6px 0;
-}
-.message-status {
-  font-size: 14px;
-  font-weight: bold;
 }
