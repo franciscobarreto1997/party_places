@@ -57,11 +57,11 @@ Venue.create!({
   user_id: User.all.sample.id
 })
 Venue.create!({
-  name: "Dining Poso Alto",
+  name: "Dining Pouso Alto",
   capacity: 100,
   price: 500,
   location: "Oliveira de Azemeis",
-  address: "Travessa do vale 38, 3720 Oliveira de Azemeis, Portugal",
+  address: "Av. Nossa Sra. das Flores, 3720-560 Oliveira de Azeméis, Portugal",
   description: "Dining Poso Alto is best known for its delicious sandwiches and burgers. They also offer fresh salads, chicken, subs, desserts, and TJ Cinnamons, among others.ll tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
 ",
   category: "Dining rooms",
@@ -69,11 +69,11 @@ Venue.create!({
   user_id: User.all.sample.id
 })
 Venue.create!({
-  name: "Estrela do Atlantico",
+  name: "Salgáboca",
   capacity: 80,
   price: 650,
   location: "Mira",
-  address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
+  address: "Av. Infante Dom Henrique, 3070-791 Praia de Mira, Portugal",
   description: "We are Committed to using the finest ingredients in our recipes. No food leaves our kitchen that we ourselves would not eat.am boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
 ",
   category: "Dining rooms",
@@ -85,8 +85,8 @@ Venue.create!({
   name: "Cool space",
   capacity: 80,
   price: 650,
-  location: "Mira",
-  address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
+  location: "Cascais",
+  address: "Tv. Amoreiras 5, 2750 Cascais, Portugal",
   description: "large venues, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.",
   category: "large venues",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753517/alex-ronsdorf-174075-unsplash.jpg",
@@ -97,8 +97,8 @@ Venue.create!({
   name: "Estrela do Atlantico",
   capacity: 80,
   price: 650,
-  location: "Mira",
-  address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
+  location: "Lisbon",
+  address: "Travessa das Amoreiras 1, 1250-025 Lisboa, Portugal",
   description: "To ensure that each guest receives prompt, professional, friendly and courteous service. To maintain a clean, comfortable and well maintained premises for our guests and staff.southern styles of cooking.boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
 ",
   category: "Dining rooms",
