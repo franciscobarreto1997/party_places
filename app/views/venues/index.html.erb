@@ -1,7 +1,13 @@
-<h1>Checkout all available venues:</h1>
+<h1>My Venues:</h1>
+<div>
+  <% @venues.each do |venue| %>
+    <%= render  @venues %>
+  <% end %>
+  <div class="d-inline categories">
+    <%=link_to "" %>
 
-<% @venues.each do |venue| %>
-  <%= render  @venues %>
-<% end %>
+
+</div>
+
 
 
