@@ -42,24 +42,25 @@ body {
 }
 
 .slideshow li:nth-child(1) {
-  background-image: url(party5.jpg);
+  background-image: url(http://res.cloudinary.com/geebabygee/image/upload/v1519928243/ezra-jeffrey-77199-unsplash_1.jpg);
 }
 .slideshow li:nth-child(2) {
-  background-image: url(party1.jpg);
+  background-image: url(https://res.cloudinary.com/geebabygee/image/upload/v1519927677/toa-heftiba-222309-unsplash.jpg);
   animation-delay: 10s;
 }
 .slideshow li:nth-child(3) {
-  background-image: url(party2.jpg);
+  background-image: url(https://res.cloudinary.com/geebabygee/image/upload/v1519927630/tim-zankert-483708-unsplash.jpg);
   animation-delay: 20s;
 }
 .slideshow li:nth-child(4) {
-  background-image: url(party3.jpg);
+  background-image: url(https://res.cloudinary.com/geebabygee/image/upload/v1519927555/party3.jpg);
   animation-delay: 30s;
 }
 .slideshow li:nth-child(5) {
-  background-image: url(party4.jpg);
+  background-image: url(https://res.cloudinary.com/geebabygee/image/upload/v1519927546/party1.jpg);
   animation-delay: 40s;
 }
+
 
 @keyframes imageAnimation {
   0% {
