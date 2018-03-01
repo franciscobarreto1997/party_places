@@ -75,7 +75,7 @@ Venue.create!({
   description: "Large dining, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
 ",
   category: "Dining rooms",
-  remote_photo_url: "https://res.cloudinary.com/geebabygee/image/upload/t_media_lib_thumb/v1519816206/alexander-popov-342444-unsplash.jpg"
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519905348/matty-adame-274356-unsplash.jpg"
 })
 User.create!({
     name: "Jose",
