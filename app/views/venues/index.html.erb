@@ -2,7 +2,16 @@
 
   <div class="container">
     <h1>My Venues</h1>
-    <%= render  @venues %>
+    <% @venues.each do |venue| %>
+      <%= render  @venues %>
+
+      <% if policy(venue).edit? %>
+        <%= link_to "edit", edit_venue_path(venue), class: "btn btn-primary btn-sm" %>
+      <% end %>
+      <% if policy(venue).destroy? %>
+        <%= link_to "delete", venues_path, method: :delete, data: { confirm: "Are you Sure?" }, class: "btn btn-primary btn-sm" %>
+      <% end %>
+    <% end %>
   </div>
 
 
