@@ -3,6 +3,7 @@ ruby '2.4.3'
 
 gem 'devise'
 gem 'cloudinary'
+gem 'pg_search'
 
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
