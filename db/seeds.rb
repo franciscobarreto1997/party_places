@@ -63,7 +63,7 @@ Venue.create!({
   address: "Avenida do Atlantico 1038, 3565 Mira, Portugal",
   description: "large venues, Jerky fatback venison ground round pork belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.",
   category: "large venues",
-  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg"
+  remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753517/alex-ronsdorf-174075-unsplash.jpg"
 })
 
 Venue.create!({
