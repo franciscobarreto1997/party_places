@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180228145427) do
+ActiveRecord::Schema.define(version: 20180301131256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,9 +66,12 @@ ActiveRecord::Schema.define(version: 20180228145427) do
     t.string "photo"
     t.float "latitude"
     t.float "longitude"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_venues_on_user_id"
   end
 
   add_foreign_key "bookings", "users"
   add_foreign_key "bookings", "venues"
   add_foreign_key "reviews", "bookings"
+  add_foreign_key "venues", "users"
 end

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "user/dashboard", to: "users#dashboard"
 
 
-  resources :venues, only: [ :index, :show, :search ] do
+  resources :venues, only: [ :index, :show, :search, :new, :create, :edit, :update ] do
     resources :bookings, only: [ :create ]
   end
 
