@@ -49,7 +49,15 @@
   <% end %>
 
 </div>
+      <% if policy(venue).edit? %>
+        <%= link_to "edit", edit_venue_path(venue), class: "btn btn-primary btn-sm" %>
+      <% end %>
+      <% if policy(venue).destroy? %>
+        <%= link_to "delete", venues_path, method: :delete, data: { confirm: "Are you Sure?" }, class: "btn btn-primary btn-sm" %>
+      <% end %>
+
 </div>
+
 
 
 
