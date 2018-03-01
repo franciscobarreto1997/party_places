@@ -1,11 +1,11 @@
 Arguments: 
-  /usr/local/Cellar/node/9.6.1/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js check --integrity
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js add sweetalert
 
 PATH: 
-  /Users/franciscobarreto/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/bin:/Users/franciscobarreto/.rbenv/versions/2.4.3/bin:/usr/local/Cellar/rbenv/1.1.1/libexec:./bin:./node_modules/.bin:/Users/franciscobarreto/.rbenv/shims:/Users/franciscobarreto/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+  /Users/josemonteiro/.rbenv/versions/2.4.3/bin:/usr/local/Cellar/rbenv/1.1.1/libexec:./bin:./node_modules/.bin:/Users/josemonteiro/.rbenv/shims:/Users/josemonteiro/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
 
 Yarn version: 
-  1.3.2
+  1.5.1
 
 Node version: 
   9.6.1
@@ -20,7 +20,9 @@ npm manifest:
     "dependencies": {
       "@rails/webpacker": "^3.2.2",
       "bootstrap": "3",
-      "jquery": "^3.3.1"
+      "gmaps": "^0.4.24",
+      "jquery": "^3.3.1",
+      "sweetalert": "^2.1.0"
     },
     "devDependencies": {
       "webpack-dev-server": "^3.0.0"
@@ -1931,6 +1933,10 @@ Lockfile:
       es6-symbol "~3.1.1"
       event-emitter "~0.3.5"
   
+  es6-object-assign@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
+  
   es6-set@~0.1.5:
     version "0.1.5"
     resolved "https://registry.yarnpkg.com/es6-set/-/es6-set-0.1.5.tgz#d2b3ec5d4d800ced818db538d28974db0a73ccb1"
@@ -2480,6 +2486,10 @@ Lockfile:
       glob "~7.1.1"
       lodash "~4.17.4"
       minimatch "~3.0.2"
+  
+  gmaps@^0.4.24:
+    version "0.4.24"
+    resolved "https://registry.yarnpkg.com/gmaps/-/gmaps-0.4.24.tgz#07f22f0cfc3e4e32498950ffafd7ca635ffc100c"
   
   graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
     version "4.1.11"
@@ -4593,6 +4603,10 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   
+  promise-polyfill@^6.0.2:
+    version "6.1.0"
+    resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-6.1.0.tgz#dfa96943ea9c121fca4de9b5868cb39d3472e057"
+  
   proxy-addr@~2.0.2:
     version "2.0.3"
     resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.3.tgz#355f262505a621646b3130a728eb647e22055341"
@@ -5557,6 +5571,13 @@ Lockfile:
       sax "~1.2.1"
       whet.extend "~0.9.9"
   
+  sweetalert@^2.1.0:
+    version "2.1.0"
+    resolved "https://registry.yarnpkg.com/sweetalert/-/sweetalert-2.1.0.tgz#d605dec840058fa8ad4a1f7c2c8c194bc72c27fa"
+    dependencies:
+      es6-object-assign "^1.1.0"
+      promise-polyfill "^6.0.2"
+  
   tapable@^0.2.7:
     version "0.2.8"
     resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"
@@ -6129,10 +6150,6 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  ReferenceError: Unknown language key integrityNodeDoesntMatch
-      at ConsoleReporter.lang (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:33004:13)
-      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:57471:30
-      at Generator.next (<anonymous>)
-      at step (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:92:30)
-      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:103:13
-      at <anonymous>
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:55:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:26)
