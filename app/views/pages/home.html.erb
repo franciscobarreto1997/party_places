@@ -1,7 +1,18 @@
-<%= render 'shared/banner' %>
-<div class="container">
 
-<h3>Party Venues around the world</h3>
-<hr align="left">
-<%= render  @venues %>
+<div id="landing-header">
+    <h1>PARTY PLACES</h1>
+        <p>Find the perfect place to make your night unforgettable</p>
+    <%= render 'shared/searchbar' %>
+    <h3>Party Venues around the world</h3>
 </div>
+
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+
+<%= render  @venues %>
