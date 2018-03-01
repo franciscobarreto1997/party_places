@@ -3,11 +3,17 @@
   <div class="col-xs-7">
       <h1>
         <strong> <%=@venue.name %></strong>
+        <hr>
       </h1>
-      <div class="d-inline">
+      <div class="d-inline categories">
+<i class="fas fa-building"></i>
         <%= @venue.category%>&nbsp&nbsp
+<i class="fas fa-map-marker"></i>
         <%= @venue.location %>&nbsp&nbsp&nbsp
+<i class="fas fa-users"></i>
         Capacity: <%= @venue.capacity %>&nbsp
+
+        <hr>
         <p>
           <%= @venue.description %>
         </p>
