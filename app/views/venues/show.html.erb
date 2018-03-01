@@ -1,16 +1,23 @@
 <%= render 'shared/jumbotron' %>
 <div class="container">
   <div class="col-xs-7">
-      <h1>
+
+      <h2>
         <strong> <%=@venue.name %></strong>
-      </h1>
+      </h2>
+
       <div class="d-inline">
-        <%= @venue.category%>&nbsp&nbsp
-        <%= @venue.location %>&nbsp&nbsp&nbsp
-        Capacity: <%= @venue.capacity %>&nbsp
+
+        <strong><%= @venue.category%>&nbsp&nbsp</strong>
+        <strong><%= @venue.location %>&nbsp&nbsp&nbsp</strong>
+        <strong>Capacity: <%= @venue.capacity %>&nbsp</strong>
+
         <p>
+          <br>
           <%= @venue.description %>
+          <br>
         </p>
+
       </div>
 
       <div>

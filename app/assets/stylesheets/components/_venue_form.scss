@@ -1,7 +1,15 @@
-.venue_form {
-  padding: 10px 20px;
-  border: 0.5px solid $gray-lighter;
-  background-color: white;
-  margin-top: 15px;
+// booking form styling
+.venue_form{
+    max-width: 400px;
+    padding: 10px 20px;
+    border: 0.5px solid #ada9a9;
+    margin: 60px auto 30px auto;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 3px;
 }
 
+// remove asterisk from form
+abbr[title="required"] {
+  display: none;
+}
