@@ -8,12 +8,27 @@ class ReviewsController < ApplicationController
     @review = Review.new
   end
 
+  # def create
+  #   @review = Review.new(review_params)
+  #   if @review.save
+  #     redirect_to @review.booking
+  #   else
+  #     render :new
+  #   end
+  # end
+
   def create
-    @review = Review.new(review_params)
+    # [...]
     if @review.save
-      redirect_to @review.booking
+      respond_to do |format|
+        format.html { redirect_to restaurant_path(@restaurant) }
+        format.js  # <-- will render `app/views/reviews/create.js.erb`
+      end
     else
-      render :new
+      respond_to do |format|
+        format.html { render 'venues/show' }
+        format.js  # <-- idem
+      end
     end
   end
 
@@ -27,6 +42,9 @@ class ReviewsController < ApplicationController
     @review.destroy
     redirect_to @booking
   end
+
+
+end
 
   private
 
