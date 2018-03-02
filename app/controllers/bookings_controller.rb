@@ -27,7 +27,7 @@ class BookingsController < ApplicationController
   end
 
   def show
-
+    @review = @booking.reviews.new
   end
 
   def update

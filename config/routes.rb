@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
 
-  resources :reviews, only: [ :index, :new, :create, :edit, :update, :delete ]
+  # resources :reviews, only: [ :index, :new, :create, :edit, :update, :delete ]
 
-  resources :bookings, only: [ :index, :show, :update, :edit, :delete ]
-
+  resources :bookings, only: [ :index, :show, :update, :edit, :delete ] do
+    resources :reviews, only: [ :new, :create]
+end
 
   get '/search', to: 'pages#search'
 
