@@ -17,6 +17,10 @@
 </div>
 
 
+  <% if policy(Venue).new? %>
+      <%= link_to "New Venue", new_venue_path, class: "btn btn-primary" %>
+  <% end %>
+
 
 
 
