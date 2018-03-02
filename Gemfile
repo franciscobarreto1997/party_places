@@ -15,6 +15,7 @@ gem 'redis'
 gem "pundit"
 gem 'carrierwave'
 gem "geocoder"
+gem "algoliasearch-rails"
 
 
 gem 'autoprefixer-rails'
