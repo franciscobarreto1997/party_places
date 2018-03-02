@@ -9,7 +9,7 @@ class VenuesController < ApplicationController
 
   def show
     @booking = Booking.new
-    @review = Review.new
+    @reviews = @venue.reviews
   end
 
 
