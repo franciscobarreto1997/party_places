@@ -15,10 +15,14 @@ class Venue < ApplicationRecord
     geocoded_by :location
   after_validation :geocode, if: :will_save_change_to_address?
 
-  include PgSearch
-  pg_search_scope :search,
-    against: [ :name, :description, :location, :category, :address ],
-    using: {
-      tsearch: { prefix: true }
-    }
+  # include PgSearch
+  # pg_search_scope :search,
+  #   against: [ :name, :description, :location, :category, :address ],
+  #   using: {
+  #     tsearch: { prefix: true }
+  #   }
+  include AlgoliaSearch
+  algoliasearch per_environment: true do
+    attribute :name, :location, :address, :description, :category
+  end
 end
