@@ -4,4 +4,12 @@ class BookingPolicy < ApplicationPolicy
       scope
     end
   end
+
+  def create?
+     return true
+  end
+
+
+
+
 end
