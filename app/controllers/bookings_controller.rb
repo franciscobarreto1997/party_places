@@ -8,6 +8,8 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
+    authorize @booking
+
   end
 
   def create
@@ -15,6 +17,7 @@ class BookingsController < ApplicationController
     @booking = current_user.bookings.build(booking_params)
 
     @booking.venue = @venue
+    authorize @booking
 
     if @booking.save
       redirect_to user_dashboard_path, notice: "your booking is now confirmed"
