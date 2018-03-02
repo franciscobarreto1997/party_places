@@ -1,23 +1,18 @@
+<div class="row venue_form" >
 
-  <div class="row venue_form" >
+  <h4><strong>€<%= @venue.price%></strong> per night</h4>
 
-      <h4><strong>€<%= @venue.price%></strong> per night</h4>
+  <%= simple_form_for @venue do |f| %>
+  <%  f.input :venue_id, :as => :hidden, :input_html => { :value => @venue.id } %>
+  <%= f.input :capacity %>
+  <% end %>
 
-      <%= simple_form_for @venue do |f| %>
-        <%  f.input :venue_id, :as => :hidden, :input_html => { :value => @venue.id } %>
-
-        <%= f.input :capacity %>
-      <% end %>
-
-      <%= simple_form_for [@venue, @booking] do |f| %>
-        <%  f.input :venue_id, :as => :hidden, :input_html => { :value => @venue.id } %>
-
-        <%= f.input :date, as: :date %>
-        <%= f.submit "Book venue", class: "btn btn-primary btn-block" %>
-      </div>
-
-      <%end%>
-  </div>
+  <%= simple_form_for [@venue, @booking] do |f| %>
+  <%  f.input :venue_id, :as => :hidden, :input_html => { :value => @venue.id } %>
+  <%= f.input :date, as: :date %>
+  <%= f.submit "Book venue", class: "btn btn-primary btn-block" %>
+  <%end%>
+</div>
 
 
 
