@@ -28,6 +28,7 @@ class VenuesController < ApplicationController
   end
 
   def edit
+    authorize @venue
   end
 
   def update
