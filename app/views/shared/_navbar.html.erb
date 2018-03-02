@@ -1,19 +1,16 @@
-<div class="navbar-wagon" style="z-index: 20;">
+<div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
   <% end %>
 
   <!-- Right Navigation -->
-  <div class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
       <%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Search", search_path, class: "navbar-wagon-item navbar-wagon-link" %>
-
-
-
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
@@ -44,4 +41,3 @@
     <% end %>
   </div>
 </div>
-
