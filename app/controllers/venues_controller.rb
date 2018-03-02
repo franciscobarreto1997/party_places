@@ -3,8 +3,8 @@ class VenuesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :search]
 
   def index
-    @venues = Venue.all
-    #@venues = policy_scope(Venue).order(created_at: :desc)
+    #@venues = Venue.all
+    @venues = policy_scope(Venue).order(created_at: :desc)
   end
 
   def show
