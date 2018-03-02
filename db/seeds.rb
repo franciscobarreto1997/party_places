@@ -114,14 +114,14 @@ Venue.all.each do |venue|
     venue: venue
     })
   Review.create!({
-    content: "Amazing place! Loved it very much!",
-    rating: 3,
+    content: "Wowwww, you made my dream come true!",
+    rating: 5,
     booking: booking
     booking_id: Booking.all.sample.id
     })
 end
 Review.create!({
-  content: "Amazing place! Loved it very much!",
+  content: "Amazing place! You guys rock!!!",
   rating: 3,
   booking: Booking.first
   booking_id: Booking.all.sample.id
@@ -135,7 +135,7 @@ Review.create!({
 
   })
 Review.create!({
-  content: "Really cool space",
+  content: "Really cool space. THank you!",
   rating: 4,
   booking: Booking.first
   booking_id: Booking.all.sample.id
