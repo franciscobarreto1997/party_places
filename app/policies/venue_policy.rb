@@ -11,13 +11,11 @@ class VenuePolicy < ApplicationPolicy
   end
 
   def edit?
-    user_is_owner
-  end
-
+    user_is_owner?
   end
 
   def update?
-    user_is_owner #owner can destroy venue
+    user_is_owner? #owner can destroy venue
   end
 
   def destroy?
@@ -30,5 +28,4 @@ class VenuePolicy < ApplicationPolicy
   def user_is_owner?
     record.user == user
   end
-
 end
