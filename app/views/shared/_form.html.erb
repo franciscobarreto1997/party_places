@@ -1,21 +1,15 @@
-<div class="container">
-  <div class="row">
-
-    <div class="col-sm-4 col-sm-offset-4">
-      <%= simple_form_for @venue do |f| %>
-      <%= f.input :name, placeholder:"The Lounge"%>
-      <%= f.input :capacity, placeholder:"50 people" %>
-      <%= f.input :price, placeholder:"250 €" %>
-      <%= f.input :location, placeholder:"Paris" %>
-      <%= f.input :address, placeholder:"18 Rue Beautreillis, 75004 Paris, France" %>
-      <%= f.input :description, placeholder:"Lounge for private events with a capacity to receive 50 people. Tables and chairs are available." %>
-      <%= f.input :category, placeholder:"Lounges" %>
-      <%= f.input :photo, placeholder:"upload venues picute" %>
-
-      <%= f.submit "Add venue", class: "btn btn-primary" %>
-      <% end %>
-    </div>
-  </div>
+<div class="row venue_form">
+  <%= simple_form_for @venue do |f| %>
+  <%= f.input :name, placeholder:"The Lounge"%>
+  <%= f.input :capacity, placeholder:"50 people" %>
+  <%= f.input :price, placeholder:"250 €" %>
+  <%= f.input :location, placeholder:"Paris" %>
+  <%= f.input :address, placeholder:"18 Rue Beautreillis, 75004 Paris, France" %>
+  <%= f.input :description, placeholder:"Lounge for private events with a capacity to receive 50 people. Tables and chairs are available." %>
+  <%= f.input :category, placeholder:"Lounges" %>
+  <%= f.input :photo, placeholder:"upload venues picute" %>
+  <%= f.submit "Add venue", class: "btn btn-primary btn-block" %>
+  <% end %>
 </div>
 
 
