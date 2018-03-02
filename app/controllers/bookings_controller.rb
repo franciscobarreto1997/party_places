@@ -28,6 +28,9 @@ class BookingsController < ApplicationController
 
   def show
     @review = @booking.reviews.new
+
+    authorize @review
+
   end
 
   def update

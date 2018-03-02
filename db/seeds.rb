@@ -14,22 +14,22 @@ User.create!({
   name: "Jose",
   email: "joemonteiro@verizon.net",
   password: "123456"
-})
+  })
 User.create!({
-    name: "Irina",
-    email: "geebabygee@github.com>",
-    password: "654321"
-})
+  name: "Irina",
+  email: "geebabygee@github.com>",
+  password: "654321"
+  })
 User.create!({
-    name: "Maura",
-    email: "email@lewagon.com",
-    password: "234567"
-})
+  name: "Maura",
+  email: "email@lewagon.com",
+  password: "234567"
+  })
 User.create!({
-    name: "Francisco",
-    email: "franciscobarreto1997@github.com",
-    password: "765432"
-})
+  name: "Francisco",
+  email: "franciscobarreto1997@github.com",
+  password: "765432"
+  })
 
 Venue.create!({
   name: "The Lounge",
@@ -37,12 +37,12 @@ Venue.create!({
   price: 600,
   location: "Paris",
   address: "18 Rue Beautreillis, 75004 Paris, France",
-   description: "The Lounge was founded by the Culver family in 1984, which eventually branched out to more than 300 franchised restaurants all over the US. belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
-",
+  description: "The Lounge was founded by the Culver family in 1984, which eventually branched out to more than 300 franchised restaurants all over the US. belly beef short ribs short loin meatball sirloin boudin corned beef. Spare ribs ham boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
+  ",
   category: "Lounges",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519815482/eloise-ambursley-355875-unsplash.jpg",
   user_id: User.all.sample.id
-})
+  })
 
 Venue.create!({
   name: "Big Warehouse",
@@ -51,11 +51,11 @@ Venue.create!({
   location: "Brussels",
   address: "Van Arteveldestraat 1, 1000 Brussels, Belgium",
   description: "Big Warehouse is at the same time a Japanese and a warehouse. They offer authentic Japanese partys to rice meals to kids meals that are served in a fast and friendly manner.all tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
-",
+  ",
   category: "Large venues",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753403/joshua-ness-109299-unsplash.jpg",
   user_id: User.all.sample.id
-})
+  })
 Venue.create!({
   name: "Dining Pouso Alto",
   capacity: 100,
@@ -63,11 +63,11 @@ Venue.create!({
   location: "Oliveira de Azemeis",
   address: "Av. Nossa Sra. das Flores, 3720-560 Oliveira de Azeméis, Portugal",
   description: "Dining Poso Alto is best known for its delicious sandwiches and burgers. They also offer fresh salads, chicken, subs, desserts, and TJ Cinnamons, among others.ll tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
-",
+  ",
   category: "Dining rooms",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753413/photos-by-lanty-568713-unsplash.jpg",
   user_id: User.all.sample.id
-})
+  })
 Venue.create!({
   name: "Salgáboca",
   capacity: 80,
@@ -75,11 +75,11 @@ Venue.create!({
   location: "Mira",
   address: "Av. Infante Dom Henrique, 3070-791 Praia de Mira, Portugal",
   description: "We are Committed to using the finest ingredients in our recipes. No food leaves our kitchen that we ourselves would not eat.am boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
-",
+  ",
   category: "Dining rooms",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753417/sweet-ice-cream-photography-89501-unsplash.jpg",
   user_id: User.all.sample.id
-})
+  })
 
 Venue.create!({
   name: "Cool space",
@@ -91,7 +91,7 @@ Venue.create!({
   category: "large venues",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519753517/alex-ronsdorf-174075-unsplash.jpg",
   user_id: User.all.sample.id
-})
+  })
 
 Venue.create!({
   name: "Estrela do Atlantico",
@@ -100,50 +100,61 @@ Venue.create!({
   location: "Lisbon",
   address: "Travessa das Amoreiras 1, 1250-025 Lisboa, Portugal",
   description: "To ensure that each guest receives prompt, professional, friendly and courteous service. To maintain a clean, comfortable and well maintained premises for our guests and staff.southern styles of cooking.boudin ham hock, pork loin drumstick ball tip pork capicola buffalo tail ground round short ribs t-bone filet mignon. Tenderloin shank sausage beef bresaola filet mignon pastrami cow. Jowl ground round short ribs capicola jerky. Meatball bresaola tail, meatloaf cupim pork chop pork belly boudin kielbasa pork loin capicola venison chicken leberkas brisket. Drumstick t-bone filet mignon beef ribs kevin pastrami. Short loin venison salami jowl meatball.
-",
+  ",
   category: "Dining rooms",
   remote_photo_url: "http://res.cloudinary.com/geebabygee/image/upload/v1519905348/matty-adame-274356-unsplash.jpg",
   user_id: User.all.sample.id
-})
+  })
 
 Venue.all.each do |venue|
 
-booking = Booking.create!({
+  booking = Booking.create!({
     date: DateTime.now,
     user: User.last,
     venue: venue
-})
-Review.create!({
+    })
+  Review.create!({
     content: "Amazing place! Loved it very much!",
     rating: 3,
     booking: booking
-})
+    booking_id: Booking.all.sample.id
+    })
 end
 Review.create!({
-    content: "Amazing place! Loved it very much!",
-    rating: 3,
-    booking: Booking.first
-})
+  content: "Amazing place! Loved it very much!",
+  rating: 3,
+  booking: Booking.first
+  booking_id: Booking.all.sample.id
+
+  })
 Review.create!({
-    content: "Dope sound, was awesome",
-    rating: 5,
-    booking: Booking.last
-})
+  content: "Dope sound, was awesome",
+  rating: 5,
+  booking: Booking.last
+  booking_id: Booking.all.sample.id
+
+  })
 Review.create!({
-    content: "Really cool space",
-    rating: 4,
-    booking: Booking.first
-})
+  content: "Really cool space",
+  rating: 4,
+  booking: Booking.first
+  booking_id: Booking.all.sample.id
+
+  })
 
 Review.create!({
-    content: "Loved every bit of it",
-    rating: 3,
-    booking: Booking.first
-})
+  content: "Loved every bit of it",
+  rating: 3,
+  booking: Booking.first
+  booking_id: Booking.all.sample.id
+
+  })
 
 Review.create!({
-    content: "Nice one",
-    rating: 2,
-    booking: Booking.first
-})
+  content: "Nice one",
+  rating: 2,
+  booking: Booking.first
+  booking_id: Booking.all.sample.id
+
+  })
 
