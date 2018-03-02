@@ -16,6 +16,9 @@
       <td> <%= booking.venue.price %> </td>
       <td> <%= booking.venue.address %> </td>
       <td> <%= link_to "Add a Review" , booking %></td>
+      <td> <%= link_to "Show Venue" , venue_path(booking.venue) %></td>
+
+
     </tr>
     <% end %>
     <tr>
