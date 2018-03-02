@@ -1,8 +1,8 @@
 class VenuePolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
-    #scope.all #anyone can view any restaurant
-    scope.where(user: user) #display only venues from current_user(owner)
+    scope.all #anyone can view any restaurant
+    #scope.where(user: user) #display only venues from current_user(owner)
     end
   end
 
@@ -11,12 +11,24 @@ class VenuePolicy < ApplicationPolicy
   end
 
   def edit?
-    record.user == user
+    user_is_owner
+  end
+
   end
 
   def update?
-    record.user == user
+    user_is_owner #owner can destroy venue
   end
 
+  def destroy?
+    user_is_owner?
+  end
+
+
+  private
+
+  def user_is_owner?
+    record.user == user
+  end
 
 end
