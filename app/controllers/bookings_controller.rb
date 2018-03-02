@@ -13,9 +13,9 @@ class BookingsController < ApplicationController
   end
 
   def create
-    #@booking = Booking.new(booking_params)
-    @booking = current_user.bookings.build(booking_params)
-
+    @booking = Booking.new(booking_params)
+    #@booking = current_user.bookings.build(booking_params) -old formula
+    @booking.user = current_user
     @booking.venue = @venue
     authorize @booking
 
