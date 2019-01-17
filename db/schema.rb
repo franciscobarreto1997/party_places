@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20180301131256) do
     t.string "date"
     t.bigint "user_id"
     t.bigint "venue_id"
-    t.datetime "created_at", null: false
+    t.datetime "created_at", n ull: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_bookings_on_user_id"
     t.index ["venue_id"], name: "index_bookings_on_venue_id"
